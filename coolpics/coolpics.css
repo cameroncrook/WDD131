@@ -48,6 +48,7 @@ header button {
     background-color: transparent;
     color: var(--text-light);
     font-size: 1.2em;
+    cursor: pointer;
 }
 main {
     background-color: var(--text-light);
@@ -92,4 +93,30 @@ img {
 }
 h2 {
     margin: 0;
+}
+.hide {
+    display: none;
+}
+
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.close-viewer {
+    justify-self: flex-end;
+    color: #fff;
+}
+
+.viewer img {
+    justify-self: center;
+    max-height: 100%;
 }
