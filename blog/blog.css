@@ -61,7 +61,7 @@ nav ul {
     grid-template-columns: repeat(3, 100px);
     list-style-type: none;
     justify-content: flex-end;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -75,40 +75,43 @@ main {
     grid-template-columns: 3fr 1fr;
     grid-gap: 15px;
     padding: 1.2em;
+    max-width: 1200px;
+    justify-self: center;
 }
 
 .book {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 250px 1fr;
     grid-gap: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
-.book__sidebar {
-    
+.book-sidebar {
+    line-height: 15px;
     text-align: end;
     border-right: 2px solid var(--accent-color);
     padding: 15px;
 }
 
-.book__publish-date {
+.book-publish-date {
     font-size: 1.4rem;
 }
 
-.book__content {
+.book-content {
     text-align: center;
 }
 
-.book__title {
+.book-title {
     color: var(--primary-color);
     text-align: start;
+    margin-top: 5px;
 }
 
-.book__cover {
+.book-cover {
     justify-self: center;
 }
 
-.book__description {
+.book-description {
     text-align: start;
 }
 
