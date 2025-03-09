@@ -70,6 +70,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 
 .recipe-display {
@@ -86,6 +87,9 @@ header h1 {
     flex-direction: column;
     grid-gap: 10px;
 }
+.recipe-info {
+    padding-bottom: 50px;
+}
 .recipe-image {
     width: 100%;
 }
@@ -95,7 +99,7 @@ header h1 {
 }
 .recipe-tags p {
     padding: 5px;
-    border: 2px solid var(--text-dark);
+    border: 1px solid var(--text-dark);
     font-weight: bold;
     margin: 0;
 }
@@ -135,6 +139,9 @@ footer {
 @media screen and (min-width: 600px) {
     .recipe {
         flex-direction: row;
+    }
+    .recipe-info {
+        padding-bottom: 0;
     }
     .recipe-image {
         max-width: 50%;
