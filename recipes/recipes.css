@@ -1,0 +1,153 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: "Patrick Hand SC";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--secondary-font);
+}
+
+p, a {
+    font-family: var(--primary-font);
+}
+a {
+    color: var(--primary-color);
+}
+
+img, svg {
+    max-width: 100%;
+}
+
+body {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 30px 5px;
+}
+header img {
+    width: 75px;
+}
+header h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Main styles */
+.search-bar {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    padding: 10px 25px;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid;
+}
+.search-icon {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-display {
+    padding: 10px 25px;
+}
+
+
+/* Recipe Article Styles */
+.recipe {
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+}
+.recipe-image {
+    width: 100%;
+}
+.recipe-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+.recipe-tags p {
+    padding: 5px;
+    border: 2px solid var(--text-dark);
+    font-weight: bold;
+    margin: 0;
+}
+.recipe-name {
+    text-decoration: none;
+}
+.recipe-name h2 {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.recipe-description {
+    display: none;
+}
+.icon-star, .icon-star-empty {
+    font-size: 20px;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.attribution {
+    font-size: 0.6em;
+}
+.social img {
+    width: 50px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+    .recipe {
+        flex-direction: row;
+    }
+    .recipe-image {
+        max-width: 50%;
+    }
+    .recipe-description {
+        display: block;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 960px) {
+    header, main, footer {
+        max-width: 960px;
+    }
+}
