@@ -120,9 +120,11 @@ footer {
     align-items: center;
     padding: 25px;
     box-sizing: border-box;
+    grid-gap: 5px;
 }
 .attribution {
     font-size: 0.6em;
+    text-decoration: none;
 }
 .social img {
     width: 50px;
