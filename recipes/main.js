@@ -80,7 +80,7 @@ function init() {
 init();
 
 function filterRecipes(query) {
-    const filtered = recipes.filter((recipe) => recipe.name.toLowerCase().includes(query) || recipe.description.includes(query) || recipe.tags.find((item) => item.toLowerCase().includes(query)));
+    const filtered = recipes.filter((recipe) => recipe.name.toLowerCase().includes(query) || recipe.description.toLowerCase().includes(query) || recipe.tags.find((item) => item.toLowerCase().includes(query)));
     const sorted = filtered.sort((a, b) => a.name.localeCompare(b.name));
 
     return sorted;

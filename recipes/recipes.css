@@ -83,6 +83,7 @@ header h1 {
     border: 1px solid var(--text-dark);
     border-radius: 5px;
     padding: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     grid-gap: 10px;
