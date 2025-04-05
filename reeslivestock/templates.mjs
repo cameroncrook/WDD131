@@ -1,7 +1,7 @@
 export function cattleCard(animal) {
     return `
     <div class="cattle-card">
-        <img src="/WDD131/images/${animal.image}" alt="Image of animal ${animal.id}">
+        <img src="images/${animal.image}" alt="Image of animal ${animal.id}">
         <div class="cattle-card-content">
             <p class="card-title">${animal.id}</p>
 
